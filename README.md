@@ -42,7 +42,7 @@ Closure is what happens when a function is declared. Everything within the funct
 
 2)Implicit binding - When a method is called, it is implied that the object to the left of the . is the object that 'this' is referring to in this context.
 
-3) New binding - creating a new object from a previous object with the keyword 'new'. 'This' now refers to the object created with new and not the object it was created from.
+3) New binding - creating a new object from a previous constructor with the keyword 'new'. 'This' now refers to the new object created with the 'new' keyword and not the object it was created from.
 
 4) Explicit binding- using methods like .call, .apply. or .bind on an object and explicitly passing in the object that 'this' will be referring to.
 
