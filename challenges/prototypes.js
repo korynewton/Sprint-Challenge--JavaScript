@@ -7,11 +7,13 @@
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
 
-const CuboidMaker = function(cubboidAttrs) {
-  this.length = cubboidAttrs.length;
-  this.width = cubboidAttrs.width;
-  this.height = cubboidAttrs.height;
+const CuboidMaker = function(cuboidAttrs) {
+  this.length = cuboidAttrs.length;
+  this.width = cuboidAttrs.width;
+  this.height = cuboidAttrs.height;
 }
+
+
 
 /* == Step 2: Volume Method ==
   Create a method using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
