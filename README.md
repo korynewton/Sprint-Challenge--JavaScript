@@ -1,4 +1,3 @@
-#inititial Commit
 # Sprint Challenge: JavaScript Fundamentals
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
@@ -30,14 +29,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+The biggest differnce between  .forEach and .map is that .map returns a new array while .forEach does not.
 
 2. What is the difference between a function and a method?
+The difference between a function and a method is that a method is explicitly on a specific object.
 
 3. What is closure?
+Closure is what happens when a function is declared. Everything within the function is closed off from the outer/global scope of the program.
 
 4. Describe the four rules of the 'this' keyword.
+1) Global binding - the outer context that this applies to if no other changes are made. The global context if the "this" keyword is essentially the JavaScript programing language in its entirety. 
+
+2)Implicit binding - When a method is called, it is implied that the object to the left of the . is the object that 'this' is referring to in this context.
+
+3) New binding - creating a new object from a previous object with the keyword 'new'. 'This' now refers to the object created with new and not the object it was created from.
+
+4) Explicit binding- using methods like .call, .apply. or .bind on an object and explicitly passing in the object that 'this' will be referring to.
 
 5. Why do we need super() in an extended class?
+We need super() when extending a class because we want the properties of the extended object to also be passed through the parent constructor.
 
 ## Project Set up
 
