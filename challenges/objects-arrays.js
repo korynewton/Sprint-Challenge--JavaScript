@@ -126,10 +126,10 @@ The individual values in the array should look like this "Name: Jackal, asiatic,
 
 */
 const animalNames = [];
-zooAnimals.forEach(function(element){
+zooAnimals.forEach(element => {
   let tempString = `Name: ${element.animal_name}, Scientific: ${element.scientific_name} `;
-  animalNames.push(tempString)
-})
+  animalNames.push(tempString)})
+
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -140,9 +140,8 @@ Create a new array named lowerCase and map over each name to convert them all to
 */
 
 ;
-const lowerCase = zooAnimals.map(function(element){
-  return element.animal_name.toLowerCase()
-})
+const lowerCase = zooAnimals.map(element => element.animal_name.toLowerCase());
+
 console.log(lowerCase); 
 
 /* Request 3: .filter() 
@@ -150,9 +149,8 @@ console.log(lowerCase);
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-const largerPopulation = zooAnimals.filter(function(element){
-  return element.population < 5
-})
+const largerPopulation = zooAnimals.filter(element => element.population < 5)
+
 console.log(largerPopulation);
 
 /* Request 4: .reduce() 
@@ -161,7 +159,7 @@ The zoos need to know their total animal population across the United States.
 Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = zooAnimals.reduce(function(total, currentValue){
+const populationTotal = zooAnimals.reduce((total, currentValue) => {
   return total += currentValue.population
 }, 0)
 console.log(populationTotal);
